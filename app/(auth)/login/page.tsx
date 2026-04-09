@@ -30,7 +30,7 @@ export default function LoginPage() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50">
       <Card className="w-full max-w-md p-8 shadow-lg">
-        <h2 className="text-2xl font-bold mb-6 text-center" style={{fontFamily:"'Robotomono',monospace"}}>Sign In</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center" style={{fontFamily:"'Robotomono',monospace"}}>LogIn</h2>
         <form className="space-y-4" onSubmit={handleLogin}>
           <div>
             <Label htmlFor="email" style={{fontFamily:"'Robotomono',monospace"}}>Email</Label>
@@ -62,14 +62,14 @@ export default function LoginPage() {
           )}
 
           <Button type="submit" className="w-full mt-4" style={{fontFamily:"'Robotomono',monospace"}}>
-            Sign In
+            LogIn
           </Button>
         </form>
 
         <p className="mt-6 text-center text-sm text-gray-500" style={{fontFamily:"'Robotomono',monospace"}}>
           Don’t have an account?{" "}
           <a href="/signup" className="text-blue-600 hover:underline" style={{fontFamily:"'Robotomono',monospace"}}>
-            Sign Up
+            Sign In
           </a>
         </p>
       </Card>

@@ -33,9 +33,9 @@ export default function LoginPage() {
       <Card className="w-full max-w-md p-8 shadow-lg">
         <h2 className="text-2xl font-bold mb-6 text-center" style={{fontFamily:"'Robotomono',monospace"}}>Sign In</h2>
         <form className="space-y-4" onSubmit={handleLogin}>
-          <div>
-            <Label htmlFor="name" style={{fontFamily:"'Robotomono',monospace"}}>Name</Label>
+          <Label htmlFor="name" style={{fontFamily:"'Robotomono',monospace"}}>Name</Label>
             <Input value={name} id="name" type="text" placeholder="Enter ur name..." onChange={(e)=>{e.stopPropagation();setname(e.target.value)}}/>
+          <div>
             <Label htmlFor="email" style={{fontFamily:"'Robotomono',monospace"}}>Email</Label>
             <Input
               id="email"
@@ -70,9 +70,9 @@ export default function LoginPage() {
         </form>
 
         <p className="mt-6 text-center text-sm text-gray-500" style={{fontFamily:"'Robotomono',monospace"}}>
-          Don’t have an account?{" "}
+          Already have an account?{" "}
           <a href="/signup" className="text-blue-600 hover:underline" style={{fontFamily:"'Robotomono',monospace"}}>
-            Sign Up
+            LogIn
           </a>
         </p>
       </Card>
