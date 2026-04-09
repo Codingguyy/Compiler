@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGODB_URI = "mongodb+srv://root:root@cluster0.bdcu7fw.mongodb.net/Compiler?retryWrites=true&w=majority&appName=Cluster0";
+const MONGODB_URI = "mongodb+srv://Compiler:Compilercode@cluster0.bdcu7fw.mongodb.net/Compiler?retryWrites=true&w=majority&appName=Cluster0";
 
 if (!MONGODB_URI) {
   throw new Error("Missing MONGODB_URI");
